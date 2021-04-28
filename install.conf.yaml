@@ -5,3 +5,7 @@
     ~/.zshrc:
       force: true
       path: zshrc
+    ~/.config/nvim:
+      glob: true
+      path: nvim
+      relink: true
