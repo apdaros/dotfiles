@@ -9,3 +9,4 @@
       glob: true
       path: nvim
       relink: true
+    ~/.gitignore: gitignore
