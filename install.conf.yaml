@@ -10,3 +10,4 @@
       path: nvim
       relink: true
     ~/.gitignore: gitignore
+    ~/.tmux.conf: tmux.conf
