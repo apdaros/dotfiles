@@ -4,10 +4,10 @@
 - link:
     ~/.zshrc:
       force: true
-      path: zshrc
+      path: link-files/zshrc
     ~/.config/nvim:
       glob: true
-      path: nvim
+      path: link-files/nvim
       relink: true
-    ~/.gitignore: gitignore
-    ~/.tmux.conf: tmux.conf
+    ~/.gitignore: link-files/gitignore
+    ~/.tmux.conf: link-files/tmux.conf
