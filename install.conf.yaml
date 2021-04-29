@@ -9,5 +9,9 @@
       glob: true
       path: link-files/nvim
       relink: true
+    ~/.doom.d:
+      glob: true
+      path: link-files/doom.d
+      relink: true
     ~/.gitignore: link-files/gitignore
     ~/.tmux.conf: link-files/tmux.conf

@@ -13,3 +13,5 @@ source $ZSH/oh-my-zsh.sh
 alias vim='nvim'
 
 export EDITOR='vim'
+
+export PATH=$HOME/.emacs.d/bin:$PATH
