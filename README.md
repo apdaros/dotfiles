@@ -22,7 +22,7 @@ $ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plu
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
-3. Link files
+4. Link files
 
 ```
 $ ./install
