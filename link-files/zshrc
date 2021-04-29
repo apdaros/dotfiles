@@ -4,7 +4,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="steeef"
+ZSH_THEME="typewritten/typewritten"
+TYPEWRITTEN_PROMPT_LAYOUT="pure"
+TYPEWRITTEN_SYMBOL="$"
+TYPEWRITTEN_COLOR_MAPPINGS="primary:blue"
+TYPEWRITTEN_COLORS="arrow:yellow;symbol:yellow"
 
 plugins=(git)
 
