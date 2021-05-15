@@ -19,7 +19,7 @@ Plug 'mattn/emmet-vim'
 Plug 'mxw/vim-jsx'
 
 " complete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
 " clojure
 Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
