@@ -3,7 +3,6 @@ call plug#begin('~/.vimplugs')
 
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'vim-airline/vim-airline'
 Plug 'vim-scripts/icalendar.vim'
 
 " align
@@ -35,6 +34,7 @@ Plug 'dart-lang/dart-vim-plugin'
 " colors
 Plug 'srcery-colors/srcery-vim'
 Plug 'itchyny/lightline.vim'
+Plug 'cormacrelf/vim-colors-github'
 
 " linters
 Plug 'w0rp/ale'
@@ -50,11 +50,26 @@ Plug 'vim-scripts/tslime.vim'
 
 call plug#end()
 
+" removes vim-better-default relative numbers
+runtime! plugin/default.vim
+set norelativenumber
+
 " load config files *.vim
 runtime! config/*.vim
 
+" colorscheme and bgs
+let iterm_profile = $ITERM_PROFILE
+if iterm_profile == 'Light'
+  set background=light
+else
+  set background=dark
+endif
+
+call github_colors#togglebg_map('<f5>')
+
+colorscheme github
+
 set cursorline
-colorscheme srcery
 
 " map leader key to ,
 let mapleader=","
@@ -132,9 +147,8 @@ au BufRead,BufNewFile *.json set foldmethod=syntax
 " rainbow
 let g:rainbow_active = 1
 
-" airline
-let g:airline#extensions#tabline#enabled = 1
-set laststatus=2
+" lightline
+let g:lightline = { 'colorscheme': 'github' }
 
 " ctrlp
 let g:ctrlp_max_height = 20
@@ -167,10 +181,6 @@ map <leader>pm :CtrlPMRU<CR>
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
-
-" removes vim-better-default relative numbers
-runtime! plugin/default.vim
-set norelativenumber
 
 " ale
 let g:ale_linters = {'clojure': ['clj-kondo']}

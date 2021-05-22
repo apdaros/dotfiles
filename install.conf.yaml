@@ -13,5 +13,9 @@
       glob: true
       path: link-files/doom.d
       relink: true
+    ~/iterm-colors:
+      glob: true
+      path: link-files/iterm-colors
+      relink: true
     ~/.gitignore: link-files/gitignore
     ~/.tmux.conf: link-files/tmux.conf

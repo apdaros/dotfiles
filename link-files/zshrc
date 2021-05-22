@@ -14,8 +14,30 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-alias vim='nvim'
+#alias vim='nvim'
 
 export EDITOR='vim'
 
 export PATH=$HOME/.emacs.d/bin:$PATH
+
+# Change iterm profiles based on system theme
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    sith() {
+        val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
+        if [[ $val == "Dark" ]]; then
+            i
+        fi
+    }
+
+    i() {
+        if [[ $ITERM_PROFILE == "Light" ]]; then
+            echo -ne "\033]50;SetProfile=Dark\a"
+            export ITERM_PROFILE="Dark"
+        else
+            echo -ne "\033]50;SetProfile=Light\a"
+            export ITERM_PROFILE="Light"
+        fi
+    }
+
+    sith
+fi
