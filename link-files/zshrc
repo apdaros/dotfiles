@@ -14,7 +14,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-#alias vim='nvim'
+alias vim='nvim'
 
 export EDITOR='vim'
 
