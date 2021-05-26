@@ -15,7 +15,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'elzr/vim-json'
 Plug 'pangloss/vim-javascript'
 Plug 'mattn/emmet-vim'
-Plug 'mxw/vim-jsx'
+Plug 'MaxMEllon/vim-jsx-pretty'
 
 " complete
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
@@ -35,9 +35,11 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'srcery-colors/srcery-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'cormacrelf/vim-colors-github'
+Plug 'chrisbra/Colorizer'
 
 " linters
 Plug 'w0rp/ale'
+Plug 'yannickcr/eslint-plugin-react'
 
 " utils
 Plug 'junegunn/vim-easy-align'
