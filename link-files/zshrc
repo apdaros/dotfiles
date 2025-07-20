@@ -14,8 +14,6 @@ alias vim='nvim'
 
 export EDITOR='vim'
 
-export PATH=$HOME/.emacs.d/bin:$PATH
-
 # Change iterm profiles based on system theme
 if [[ "$(uname -s)" == "Darwin" ]]; then
     sith() {
